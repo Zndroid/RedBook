@@ -20,12 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * Created by HaPBoy on 5/14/16.
- */
 public class DataManager {
 
-    // API: Get BookInfo Via ISBN
     public static void getBookInfoFromISBN(String isbn, Response.Listener listener, Response.ErrorListener errorListener) {
         String url = DoubanAPI.bookISBNApi + isbn;
         System.out.println("url = "+url);
@@ -36,9 +32,8 @@ public class DataManager {
         MyApplication.getRequestQueue().add(jsObjRequest);
     }
 
-    // API: Get BookSearch
+
     public static void getBookSearch(String bookName, int start, Response.Listener listener, Response.ErrorListener errorListener) {
-        // URLencode
         try {
             bookName = URLEncoder.encode(bookName, "UTF-8");
         } catch (UnsupportedEncodingException e) {
@@ -53,7 +48,6 @@ public class DataManager {
         MyApplication.getRequestQueue().add(jsObjRequest);
     }
 
-    // JSONObject -> DoubanBook
     public static DoubanBook jsonObject2DoubanBook(JSONObject book) {
         DoubanBook bookData = new DoubanBook();
         try {
@@ -126,7 +120,6 @@ public class DataManager {
         return bookData;
     }
 
-    // DoubanBook -> Book
     public static Book doubanBook2Book(DoubanBook book) {
         Book book_db = new Book();
 

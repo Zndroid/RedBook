@@ -19,9 +19,6 @@ import org.litepal.crud.DataSupport;
 import jp.wasabeef.glide.transformations.BlurTransformation;
 
 
-/**
- * Created by HaPBoy on 5/22/16.
- */
 public class BookCoverFragment extends Fragment {
 
     private static final String ARG_BOOK_ID = "book_id";
@@ -61,8 +58,8 @@ public class BookCoverFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_book_cover, container, false);
 
-        ImageView ivBookCover = (ImageView) view.findViewById(R.id.book_cover);
-        ImageView ivBookCoverBg = (ImageView) view.findViewById(R.id.book_cover_bg);
+        ImageView ivBookCover = view.findViewById(R.id.book_cover);
+        ImageView ivBookCoverBg =  view.findViewById(R.id.book_cover_bg);
 
         Glide.with(ivBookCover.getContext())
                 .load(book.getImage())
@@ -78,8 +75,8 @@ public class BookCoverFragment extends Fragment {
                 .bitmapTransform(new BlurTransformation(ivBookCoverBg.getContext(), 25, 3))
                 .into(ivBookCoverBg);
 
-        TextView tvRate = (TextView) view.findViewById(R.id.tv_cover_rate);
-        RatingBar rbRate = (RatingBar) view.findViewById(R.id.rb_cover_rate);
+        TextView tvRate =  view.findViewById(R.id.tv_cover_rate);
+        RatingBar rbRate =  view.findViewById(R.id.rb_cover_rate);
 
         // 图书评分
         tvRate.setText(book.getAverage());

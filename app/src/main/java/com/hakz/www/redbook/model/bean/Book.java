@@ -4,9 +4,6 @@ import org.litepal.crud.DataSupport;
 
 import java.io.Serializable;
 
-/**
- * Created by HaPBoy on 5/14/16.
- */
 public class Book extends DataSupport implements Serializable {
     private int id;
     private String subtitle;

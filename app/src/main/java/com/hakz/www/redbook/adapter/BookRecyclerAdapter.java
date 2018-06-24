@@ -22,14 +22,11 @@ import org.litepal.crud.DataSupport;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by HaPBoy on 5/21/16.
- */
 public class BookRecyclerAdapter extends RecyclerView.Adapter<BookRecyclerViewHolder> {
 
-    List<Book> list;
-    LayoutInflater inflater;
-    Context context;
+    private List<Book> list;
+    private LayoutInflater inflater;
+    private Context context;
 
     public BookRecyclerAdapter(Context context) {
         this.context = context;
@@ -125,15 +122,15 @@ class BookRecyclerViewHolder extends RecyclerView.ViewHolder {
 
     public BookRecyclerViewHolder(View itemView) {
         super(itemView);
-        bookImage = (ImageView) itemView.findViewById(R.id.book_item_image);
-        bookName = (TextView) itemView.findViewById(R.id.book_item_title);
-        bookPoints = (TextView) itemView.findViewById(R.id.book_item_points);
-        bookAuthor = (TextView) itemView.findViewById(R.id.book_item_author);
-        bookTranslator = (TextView) itemView.findViewById(R.id.book_item_translator);
-        bookPublisher = (TextView) itemView.findViewById(R.id.book_item_publisher);
-        bookPubdate = (TextView) itemView.findViewById(R.id.book_item_pubdate);
-        bookPrice = (TextView) itemView.findViewById(R.id.book_item_price);
-        bookDivider = (TextView) itemView.findViewById(R.id.book_item_divider);
-        cardView = (CardView) itemView.findViewById(R.id.book_item);
+        bookImage = itemView.findViewById(R.id.book_item_image);
+        bookName =  itemView.findViewById(R.id.book_item_title);
+        bookPoints =  itemView.findViewById(R.id.book_item_points);
+        bookAuthor = itemView.findViewById(R.id.book_item_author);
+        bookTranslator = itemView.findViewById(R.id.book_item_translator);
+        bookPublisher =  itemView.findViewById(R.id.book_item_publisher);
+        bookPubdate =  itemView.findViewById(R.id.book_item_pubdate);
+        bookPrice =  itemView.findViewById(R.id.book_item_price);
+        bookDivider =  itemView.findViewById(R.id.book_item_divider);
+        cardView = itemView.findViewById(R.id.book_item);
     }
 }

@@ -2,44 +2,8 @@ package com.hakz.www.redbook.model.bean;
 
 import java.util.List;
 
-/**
- * Created by HaPBoy on 5/14/16.
- */
 public class DoubanBook {
 
-    /**
-     * rating : {"max":10,"numRaters":8,"average":"0.0","min":0}
-     * subtitle :
-     * author : ["杨超"]
-     * pubdate : 2009-10
-     * tags : [{"count":1,"name":"2009","title":"2009"},{"count":1,"name":"中国","title":"中国"},{"count":1,"name":"中国文化","title":"中国文化"},{"count":1,"name":"文化研究","title":"文化研究"},{"count":1,"name":"民俗","title":"民俗"},{"count":1,"name":"社会","title":"社会"}]
-     * origin_title :
-     * image : http://img3.douban.com/mpic/s6633520.jpg
-     * binding :
-     * translator : []
-     * catalog :
-     * pages : 310
-     * images : {"small":"http://img3.douban.com/spic/s6633520.jpg","large":"http://img3.douban.com/lpic/s6633520.jpg","medium":"http://img3.douban.com/mpic/s6633520.jpg"}
-     * alt : http://book.douban.com/subject/4021776/
-     * id : 4021776
-     * publisher :
-     * isbn10 : 7538727469
-     * isbn13 : 9787538727463
-     * title : 中国民俗
-     * url : http://api.douban.com/v2/book/4021776
-     * alt_title :
-     * author_intro :
-     * summary : 《中国民俗》以人文的视角、故事体文本、精致的图片，将博大精深的学术文化转为轻松愉悦的普及读本，一改过去生硬乏味的叙述方式，不追求完整全面，只追求要点常识，不追求专业深奥，只追求好读易懂，让您怀着轻松的心情，用最短的时间领略中国文化引人入胜的独特魅力。
-     中国自古就有“入国问禁，入乡随俗”的民间传统，民俗是最贴近身心和生活、并世世代代锤炼和传承的文化传统。《中国民俗》全景式地展现了它的形成、延展与传承的演进过程，从中华民族的饮食文化、服饰文化、传统建筑、传统节日、婚庆礼仪、信仰禁忌以及民间艺术等诸多层面，以生动的语言、精美的图片、丰富的人文蕴含，给我们展开了一幅精彩生动的民俗画卷。
-     * price : 40.00元
-     */
-
-    /**
-     * max : 10
-     * numRaters : 8
-     * average : 0.0
-     * min : 0
-     */
     private RatingEntity rating;
 
     private String subtitle;

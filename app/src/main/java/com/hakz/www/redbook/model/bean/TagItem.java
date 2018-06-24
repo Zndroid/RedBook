@@ -1,8 +1,5 @@
 package com.hakz.www.redbook.model.bean;
 
-/**
- * Created by HaPBoy on 5/27/16.
- */
 public class TagItem {
     private String tag;
     private String content;
